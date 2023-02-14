@@ -1,4 +1,9 @@
 <section class="container">
   <h3>Soy {{ person.name }}</h3>
-  <p>Mi altura es {{ person.height }}</p>
+  <p id="altura">Mi altura es {{ person.height }}</p>
+  <p id="peso">Mi peso es {{ person.weight }}</p>
+  <button type="button" (click)="handleClick()">
+    MI IMC es: {{ bmiStatus }}
+  </button>
+  <button type="button" id="chooser" (click)="handleChoose()">Choose</button>
 </section>
